@@ -1,81 +1,69 @@
-<!-- Visual Header -->
+<!-- Visual Header – Combined Dashboards Showcase -->
 <p align="center">
-  <img src="your-dashboard-dark.png" alt="Dark-themed Supply Chain Dashboard overview" />
+  <img src="https://github.com/ibrahim22-11/Supply-Chain-Logistics-/blob/main/Overview.png?raw=true" alt="Supply Chain Dashboard Overview" width="400" />
+  <img src="https://github.com/ibrahim22-11/Supply-Chain-Logistics-/blob/main/Mfg%20and%20Transportation%20Dashboard.png?raw=true" alt="Manufacturing and Transportation Dashboard" width="400" />
+  <img src="https://github.com/ibrahim22-11/Supply-Chain-Logistics-/blob/main/Products%20Dashboard.png?raw=true" alt="Products Dashboard" width="400" />
 </p>
 
 # **Supply Chain Logistics Dashboard**  
-_A Power BI + DAX project by Ibrahim, Aspiring Data Analyst — Aug 25 to Sept 1_
+_A Power BI & DAX project by Ibrahim — Completed Sept 1_
 
 ---
 
 ##  Project Snapshot & Timeline  
 - **Date Range:** August 25 – September 1  
 - **Analyst:** Ibrahim (Aspiring Data Analyst)  
-- **Objective:** Build an interactive dashboard to monitor supply chain KPIs, product performance, costs, and revenue—delivered with clean data, robust modeling, and compelling visuals.
+- **Objective:** Develop an all-in-one, dark-mode-ready dashboard in Power BI for tracking supply chain KPIs, including production, cost, SKU-level performance, and transport analytics.
 
 ---
 
-##  Key Performance Indicators
+##  Key Performance Indicators (Unified View)
 
-| Metric                  | Value  |
-|-------------------------|--------|
-| **Total Revenue**        | 2.29 M |
-| **Total Product**        | 57 K   |
-| **Total Sold**           | 46 K   |
-| **Total Stock**          | 5 K    |
-| **Transportation Cost**  | 53 K   |
-| **Manufacturing Cost**   | 5 K    |
-| **Defective Products**   | 6 K    |
-| **Total Profit / Cost**  | 2.28 M |
-
----
-
-##  Dashboard Overview (Dark-Mode Optimized)
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="overview-dark.png">
-  <img alt="Combined KPI overview: revenue, costs, product and transport charts" src="overview-light.png">
-</picture>
-
-This unified visual displays all your dashboards (KPIs, location revenues, route costs, transport mode analysis) together—designed with a dark-background aesthetic that highlights data clarity and visual prominence.
+| Metric                  | Value     |
+|-------------------------|-----------|
+| **Total Revenue**        | 2.29 M    |
+| **Total Product (Produced)** | 57 K      |
+| **Total Sold**           | 46 K      |
+| **Total Stock**          | 5 K       |
+| **Transportation Cost**  | 53 K      |
+| **Manufacturing Cost**   | 5 K       |
+| **Defective Products**   | 6 K       |
+| **Total Profit / Cost**  | *(please add your value)*
 
 ---
 
-##  Product & SKU Insights
+##  Embedded Dashboards Overview
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="products-dark.png">
-  <img alt="SKU-level insights: production, sales, stock" src="products-light.png">
-</picture>
+### Overview & Combined KPIs
+Displays top-line figures—including location revenue, cost breakdown, mode-wise transport revenues, and core metrics (Revenue, Product, Stock, etc.).
 
-Visuals include:
-- Product produced, sold, and stock levels by SKU
-- Profit distributions by demographic
-- Product category scatter plot (cosmetics, haircare, skincare)
+### Manufacturing & Transportation
+Highlights cost distribution by routes (A, B, C), transport mode revenue, and manufacturing-related insights.
+
+### Products Dashboard
+Gives SKU-level visibility—from production and sales to inventory and profit—and includes category and demographic breakdowns.
 
 ---
 
-##  Revenue & Profit Breakdown
+##  Dashboard PDF & Recording
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="profit-dark.png">
-  <img alt="Profit by demographics; revenue by category, carrier, supplier" src="profit-light.png">
-</picture>
+- **Comprehensive PDF Overview:**  
+  [View the full dashboard as pdf]((https://github.com/ibrahim22-11/Supply-Chain-Logistics-/blob/main/dashboards%20supply%20chain.pdf?raw=true))
 
-Features:
-- Profit segmentation by demographic groups
-- Revenue by product type, carrier, and supplier
-- Dynamic table listing of SKU revenue
+- **Interactive Walkthrough (Video):**  
+  [Watch the dashboard in action]((https://github.com/ibrahim22-11/Supply-Chain-Logistics-/blob/main/supplychain%20Recording%20.mp4?raw=true))
 
 ---
 
 ##  Data Workflow & Technical Architecture
 
-**1. Data Cleaning & Power Query**  
-- Imported raw data (CSV/DB), cleaned dates, handled duplicates/missing entries.  
-- Structured relationships and optimized model for analytics.
+**1. Data Cleaning & ETL (Power Query)**  
+- Imported raw datasets via Power Query  
+- Standardized date formats, removed duplicates, handled missing data  
+- Structured tables with relationships for efficient modeling
 
-**2. DAX Measures (Key Examples):**
+**2. Modeling & DAX Calculations**  
+Sample measures:
 ```dax
 OnTimePercent = DIVIDE([On Time Deliveries], [Total Deliveries])
 InventoryTurnover = DIVIDE([Total Sold], [Average Stock])
