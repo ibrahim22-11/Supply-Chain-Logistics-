@@ -28,7 +28,7 @@ _A Power BI & DAX project by Ibrahim — Completed Sept 1_
 | **Transportation Cost**  | 53 K      |
 | **Manufacturing Cost**   | 5 K       |
 | **Defective Products**   | 6 K       |
-| **Total Profit / Cost**  | *(please add your value)*
+| **Total Profit / Cost**  | 2.28 M    |
 
 ---
 
@@ -64,7 +64,19 @@ Gives SKU-level visibility—from production and sales to inventory and profit�
 
 **2. Modeling & DAX Calculations**  
 Sample measures:
+# 📈 DAX Measures Used
+
+Your project uses multiple DAX measures for KPIs and calculations:
+
 ```dax
-OnTimePercent = DIVIDE([On Time Deliveries], [Total Deliveries])
-InventoryTurnover = DIVIDE([Total Sold], [Average Stock])
-ProfitMargin = DIVIDE([Total Profit], [Total Revenue])
+Average Profit = AVERAGE('Sales'[Profit])
+Defective Product = SUM('Sales'[Defective Units])
+Mfg Cost = SUM('Manufacturing'[Cost])
+Total Cost = [Mfg Cost] + [transportation cost]
+Total Product Available = SUM('Inventory'[Available Units])
+Total Product Produced = SUM('Production'[Produced Units])
+Total Product Sold = SUM('Sales'[Sold Units])
+Total Profit = SUM('Sales'[Profit])
+Total Revenue = SUM('Sales'[Revenue])
+Total Stock = SUM('Inventory'[Stock Units])
+transportation cost = SUM('Transport'[Cost])
