@@ -40,7 +40,7 @@ _A Complete Power BI + DAX Project by **Ibrahim** — Completed **Sept 1, 2025**
 
 ## 🧮 **DAX Measures**
 
-```dax
+
 Average Profit = AVERAGE('Sales'[Profit])
 Defective Product = SUM('Sales'[Defective Units])
 Mfg cost = SUM('Manufacturing'[Cost])
