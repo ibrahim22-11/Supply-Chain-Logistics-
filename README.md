@@ -41,19 +41,6 @@ _A Complete Power BI + DAX Project by **Ibrahim** — Completed **Sept 1, 2025**
 ## 🧮 **DAX Measures**
 
 
-Average Profit = AVERAGE('Sales'[Profit])
-Defective Product = SUM('Sales'[Defective Units])
-Mfg cost = SUM('Manufacturing'[Cost])
-Total Cost = [Mfg cost] + [transportation cost]
-Total Product Available = SUM('Inventory'[Available Units])
-total Product Produced = SUM('Production'[Produced Units])
-Total Product Sold = SUM('Sales'[Sold Units])
-Total Profit = SUM('Sales'[Profit])
-Total Revenue = SUM('Sales'[Revenue])
-total Stock = SUM('Inventory'[Stock Units])
-transportation cost = SUM('Transport'[Cost])
-
-
 
 
 # 🧹 DATA CLEANING & PREPARATION
@@ -106,3 +93,18 @@ transportation cost = SUM('Transport'[Cost])
 + Project Duration: 25 Aug – 1 Sept 2025
 + Skills Showcased: Power Query, DAX, Power BI, Data Cleaning, Storytelling
 + ✅ Project Successfully Completed on Sept 1, 2025
+
+
+```dax
+Average Profit = AVERAGE('Sales'[Profit])
+Defective Product = SUM('Sales'[Defective Units])
+Mfg cost = SUM('Manufacturing'[Cost])
+Total Cost = [Mfg cost] + [transportation cost]
+Total Product Available = SUM('Inventory'[Available Units])
+total Product Produced = SUM('Production'[Produced Units])
+Total Product Sold = SUM('Sales'[Sold Units])
+Total Profit = SUM('Sales'[Profit])
+Total Revenue = SUM('Sales'[Revenue])
+total Stock = SUM('Inventory'[Stock Units])
+transportation cost = SUM('Transport'[Cost])
+
