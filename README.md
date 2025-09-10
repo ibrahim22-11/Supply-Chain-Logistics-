@@ -26,7 +26,7 @@ _A Power BI + DAX project by Ibrahim, Aspiring Data Analyst — Aug 25 to Sept 1
 | **Transportation Cost**  | 53 K   |
 | **Manufacturing Cost**   | 5 K    |
 | **Defective Products**   | 6 K    |
-| **Total Profit / Cost**  | *(add your values)* |
+| **Total Profit / Cost**  | 2.28 M |
 
 ---
 
