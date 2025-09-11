@@ -27,11 +27,11 @@ _A Complete Power BI + DAX Project by **Ibrahim** — Completed **Sept 1, 2025**
 | **Total Revenue**         | 2.29 M |
 | **Total Product Produced**| 57 K |
 | **Total Product Sold**    | 46 K |
-| **Total Product Available**| *(calculated dynamically)* |
+| **Total Product Available**| 4840 |
 | **Total Stock**           | 5 K |
-| **Total Profit**          | *(calculated dynamically)* |
-| **Average Profit**        | *(calculated dynamically)* |
-| **Total Cost**            | *(calculated dynamically)* |
+| **Total Profit**          | 2.28 M|
+| **Average Profit**        | 22.28 K |
+| **Total Cost**            | 58.209 K |
 | **Manufacturing Cost**    | 5 K |
 | **Transportation Cost**   | 53 K |
 | **Defective Products**    | 6 K |
